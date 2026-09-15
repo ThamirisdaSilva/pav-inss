@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1001,
+    "protocolo": "PV-2026-001001",
+    "cpf": "12345678900",
+    "numeroBeneficio": "987654321",
+    "proprietario": "cidadao.demo",
+    "status": "VALIDADA",
+    "dataCriacao": "2026-09-15T09:00:00.000Z",
+    "dataConclusao": "2026-09-15T09:05:00.000Z"
+  },
+  {
+    "id": 1002,
+    "protocolo": "PV-2026-001002",
+    "cpf": "12345678900",
+    "numeroBeneficio": "987654322",
+    "proprietario": "cidadao.demo",
+    "status": "AGUARDANDO_VALIDACAO",
+    "dataCriacao": "2026-09-15T09:10:00.000Z",
+    "dataConclusao": null
+  },
+  {
+    "id": 1003,
+    "protocolo": "PV-2026-001003",
+    "cpf": "98765432100",
+    "numeroBeneficio": "123456789",
+    "proprietario": "outro.cidadao",
+    "status": "REPROVADA",
+    "dataCriacao": "2026-09-15T09:20:00.000Z",
+    "dataConclusao": "2026-09-15T09:24:00.000Z"
+  }
+]

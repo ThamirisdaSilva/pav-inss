@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "Maria da Silva",
+    "usuario": "cidadao.demo",
+    "senha": "123456",
+    "perfil": "cidadao",
+    "cpf": "12345678900",
+    "token": "TOKEN_CIDADAO"
+  },
+  {
+    "nome": "João Servidor",
+    "usuario": "servidor.demo",
+    "senha": "123456",
+    "perfil": "servidor",
+    "cpf": null,
+    "token": "TOKEN_SERVIDOR"
+  },
+  {
+    "nome": "Ana Auditoria",
+    "usuario": "auditor.demo",
+    "senha": "123456",
+    "perfil": "auditor",
+    "cpf": null,
+    "token": "TOKEN_AUDITOR"
+  },
+  {
+    "nome": "Visitante Demo",
+    "usuario": "visitante.demo",
+    "senha": "123456",
+    "perfil": "visitante",
+    "cpf": null,
+    "token": "TOKEN_VISITANTE"
+  }
+]

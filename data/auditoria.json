@@ -1,0 +1,83 @@
+[
+  {
+    "requestId": "REQ-A172C7",
+    "data": "2026-09-15T09:25:47.739Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-B989E4",
+    "data": "2026-09-15T09:25:55.177Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "ACESSO_NEGADO",
+    "recurso": "/api/demo/servico-biometria",
+    "resultado": "PERFIL_SEM_PERMISSAO"
+  },
+  {
+    "requestId": "REQ-CA8751",
+    "data": "2026-09-15T09:26:15.084Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CRIAR_PROVA_VIDA",
+    "recurso": "1004",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-78426C",
+    "data": "2026-09-15T09:26:19.331Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "VALIDAR_PROVA_VIDA",
+    "recurso": "1004",
+    "resultado": "VALIDADA"
+  },
+  {
+    "requestId": "REQ-A02742",
+    "data": "2026-09-15T09:26:20.851Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "VALIDAR_PROVA_VIDA",
+    "recurso": "1004",
+    "resultado": "ERRO_409"
+  },
+  {
+    "requestId": "REQ-06C033",
+    "data": "2026-09-15T09:26:22.204Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "VALIDAR_PROVA_VIDA",
+    "recurso": "1004",
+    "resultado": "ERRO_409"
+  },
+  {
+    "requestId": "REQ-9D0ECC",
+    "data": "2026-09-15T09:26:56.391Z",
+    "usuario": "servidor.demo",
+    "perfil": "servidor",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-51996D",
+    "data": "2026-09-15T09:27:01.856Z",
+    "usuario": "servidor.demo",
+    "perfil": "servidor",
+    "acao": "CONSULTAR_PROVA_VIDA",
+    "recurso": "1001",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-5CCF61",
+    "data": "2026-09-15T09:27:10.079Z",
+    "usuario": "servidor.demo",
+    "perfil": "servidor",
+    "acao": "CONSULTAR_RECIBO",
+    "recurso": "1001",
+    "resultado": "SUCESSO"
+  }
+]
