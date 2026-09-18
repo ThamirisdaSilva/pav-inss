@@ -2,136 +2,316 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Sistema Didático de Prova de Vida Digital</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="topbar">
       <div>
-        <strong>PROVA DE VIDA DIGITAL</strong>
-        <span>Ambiente didático</span>
+        <strong> PROVA DE VIDA DIGITAL </strong>
+
+        <span> Ambiente didático </span>
       </div>
+
       <nav>
-        <a href="/api-docs" target="_blank" rel="noreferrer">Abrir Swagger</a>
-        <button id="logoutButton" class="link hidden" type="button">Sair</button>
+        <a href="/api-docs" target="_blank" rel="noreferrer"> Abrir Swagger </a>
+
+        <button id="logoutButton" class="link hidden" type="button">
+          Sair
+        </button>
       </nav>
     </header>
 
     <main class="container">
+      <!-- LOGIN -->
+
       <section id="loginSection" class="panel login-panel">
         <p class="label">ACESSO</p>
+
         <h1>Sistema Didático de Prova de Vida Digital</h1>
+
         <p>Use uma conta fictícia para iniciar a demonstração.</p>
 
         <form id="loginForm">
-          <label for="usuario">CPF ou usuário</label>
+          <label for="usuario"> Usuário </label>
+
           <input id="usuario" name="usuario" autocomplete="username" required />
 
-          <label for="senha">Senha</label>
-          <input id="senha" name="senha" type="password" autocomplete="current-password" required />
+          <label for="senha"> Senha </label>
+
+          <input
+            id="senha"
+            name="senha"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
 
           <button class="primary" type="submit">Entrar</button>
         </form>
 
         <div class="demo-accounts">
           <h2>Contas de demonstração</h2>
-          <button type="button" data-user="cidadao.demo"><strong>Cidadão</strong><span>cidadao.demo / 123456</span></button>
-          <button type="button" data-user="servidor.demo"><strong>Servidor</strong><span>servidor.demo / 123456</span></button>
-          <button type="button" data-user="auditor.demo"><strong>Auditor</strong><span>auditor.demo / 123456</span></button>
-          <button type="button" data-user="visitante.demo"><strong>Visitante</strong><span>visitante.demo / 123456</span></button>
+
+          <button type="button" data-user="cidadao.demo">
+            <strong>Cidadão</strong>
+
+            <span> cidadao.demo / 123456 </span>
+          </button>
+
+          <button type="button" data-user="servidor.demo">
+            <strong>Servidor</strong>
+
+            <span> servidor.demo / 123456 </span>
+          </button>
+
+          <button type="button" data-user="auditor.demo">
+            <strong>Auditor</strong>
+
+            <span> auditor.demo / 123456 </span>
+          </button>
+
+          <button type="button" data-user="visitante.demo">
+            <strong>Visitante</strong>
+
+            <span> visitante.demo / 123456 </span>
+          </button>
         </div>
       </section>
 
+      <!-- APLICAÇÃO -->
+
       <section id="appSection" class="hidden">
+        <!-- CABEÇALHO DA APLICAÇÃO -->
+
         <section class="hero">
           <div>
             <p class="label">SESSÃO ATUAL</p>
+
             <h1>Sistema de Prova de Vida Digital</h1>
+
             <p id="userInfo"></p>
           </div>
-          <button id="startButton" class="primary" type="button">Iniciar prova de vida</button>
+
+
+         <div class="actions">
+
+    <a
+        class="button-link"
+        href="/cadastro.html"
+    >
+        Cadastrar nova solicitação
+    </a>
+
+    <a
+        class="button-link"
+        href="/consulta.html"
+    >
+        Consultar solicitação
+    </a>
+
+    <button
+        id="startButton"
+        class="primary"
+        type="button"
+    >
+        Iniciar prova de vida
+    </button>
+
+</div>
+
+          </div>
         </section>
+
+        <!-- MENSAGENS -->
 
         <div id="message" class="message hidden" role="status"></div>
 
+        <!-- NOVA SOLICITAÇÃO -->
+
         <section id="newProofSection" class="panel hidden">
           <p class="label">NOVA SOLICITAÇÃO</p>
-          <h2>Dados da prova de vida</h2>
-          <form id="proofForm">
-            <label for="cpf">CPF fictício</label>
-            <input id="cpf" name="cpf" inputmode="numeric" maxlength="11" placeholder="12345678900" required />
 
-            <label for="numeroBeneficio">Número do benefício fictício</label>
-            <input id="numeroBeneficio" name="numeroBeneficio" inputmode="numeric" placeholder="987654321" required />
+          <h2>Dados da prova de vida</h2>
+
+          <form id="proofForm">
+            <label for="nuit"> NUIT </label>
+
+            <input
+              id="nuit"
+              name="nuit"
+              inputmode="numeric"
+              maxlength="9"
+              pattern="[0-9]{9}"
+              placeholder="123456789"
+              required
+            />
+
+            <label for="numeroBeneficio"> Número do benefício fictício </label>
+
+            <input
+              id="numeroBeneficio"
+              name="numeroBeneficio"
+              inputmode="numeric"
+              pattern="[0-9]+"
+              placeholder="987654321"
+              required
+            />
 
             <button class="primary" type="submit">Iniciar prova de vida</button>
           </form>
         </section>
 
+        <!-- VALIDAÇÃO -->
+
         <section id="validationSection" class="panel hidden">
           <p class="label">VALIDAÇÃO SIMULADA</p>
+
           <h2>Validar prova de vida</h2>
+
           <dl class="details">
-            <div><dt>ID</dt><dd id="proofId">-</dd></div>
-            <div><dt>Protocolo</dt><dd id="temporaryProtocol">-</dd></div>
-            <div><dt>Status atual</dt><dd id="currentStatus">-</dd></div>
+            <div>
+              <dt>ID</dt>
+
+              <dd id="proofId">-</dd>
+            </div>
+
+            <div>
+              <dt>Protocolo</dt>
+
+              <dd id="temporaryProtocol">-</dd>
+            </div>
+
+            <div>
+              <dt>Status atual</dt>
+
+              <dd id="currentStatus">-</dd>
+            </div>
           </dl>
+
           <div class="actions">
-            <button id="validButton" class="primary" type="button">Simular biometria válida</button>
-            <button id="invalidButton" class="secondary" type="button">Simular biometria inválida</button>
+            <button id="validButton" class="primary" type="button">
+              Simular biometria válida
+            </button>
+
+            <button id="invalidButton" class="secondary" type="button">
+              Simular biometria inválida
+            </button>
           </div>
         </section>
+
+        <!-- CONSULTA -->
 
         <section id="consultSection" class="panel">
           <p class="label">CONSULTA</p>
+
           <h2>Consultar prova de vida</h2>
+
           <div class="inline-form">
             <input id="consultId" inputmode="numeric" placeholder="Ex.: 1001" />
-            <button id="consultButton" class="secondary" type="button">Consultar</button>
+
+            <button id="consultButton" class="secondary" type="button">
+              Consultar
+            </button>
           </div>
+
           <p class="hint">Dados preparados: 1001, 1002, 1003 e 9999.</p>
         </section>
 
+        <!-- RESULTADO -->
+
         <section id="resultSection" class="panel hidden">
           <p class="label">RESULTADO</p>
+
           <h2 id="resultTitle">Prova de vida</h2>
+
           <dl id="resultDetails" class="details"></dl>
-          <button id="receiptButton" class="primary" type="button">Ver recibo</button>
+
+          <button id="receiptButton" class="primary" type="button">
+            Ver recibo
+          </button>
         </section>
+
+        <!-- RECIBO -->
 
         <section id="receiptSection" class="panel receipt hidden">
           <p class="label">COMPROVANTE</p>
+
           <h2>Sistema de Prova de Vida Digital</h2>
+
           <h3>Comprovante de Prova de Vida</h3>
+
           <dl id="receiptDetails" class="details"></dl>
+
           <p>Este sistema é uma simulação educacional.</p>
-          <button id="printButton" class="primary" type="button">Imprimir recibo</button>
+
+          <button id="printButton" class="primary" type="button">
+            Imprimir recibo
+          </button>
         </section>
+
+        <!-- PAINEL DE DEMONSTRAÇÃO -->
 
         <section id="demoPanel" class="panel demo-panel hidden">
           <p class="label">PAINEL DE DEMONSTRAÇÃO</p>
+
           <h2>Controles exclusivamente didáticos</h2>
+
           <dl class="details">
-            <div><dt>Usuário atual</dt><dd id="demoUser">-</dd></div>
-            <div><dt>Perfil atual</dt><dd id="demoRole">-</dd></div>
-            <div><dt>Token mascarado</dt><dd id="demoToken">-</dd></div>
+            <div>
+              <dt>Usuário atual</dt>
+
+              <dd id="demoUser">-</dd>
+            </div>
+
+            <div>
+              <dt>Perfil atual</dt>
+
+              <dd id="demoRole">-</dd>
+            </div>
+
+            <div>
+              <dt>Token mascarado</dt>
+
+              <dd id="demoToken">-</dd>
+            </div>
           </dl>
-          <label for="biometricService">Serviço biométrico</label>
+
+          <label for="biometricService"> Serviço biométrico </label>
+
           <div class="inline-form">
             <select id="biometricService">
               <option value="normal">Normal</option>
-              <option value="lento">Lento, resposta em cerca de 5 segundos</option>
+
+              <option value="lento">
+                Lento, resposta em cerca de 5 segundos
+              </option>
+
               <option value="indisponivel">Indisponível</option>
             </select>
-            <button id="demoButton" class="secondary" type="button">Aplicar simulação</button>
+
+            <button id="demoButton" class="secondary" type="button">
+              Aplicar simulação
+            </button>
           </div>
-          <p class="hint">Apenas servidor e auditor podem alterar a simulação. O estado continua ativo ao trocar de perfil.</p>
+
+          <p class="hint">
+            Apenas servidor e auditor podem alterar a simulação. O estado
+            continua ativo ao trocar de perfil.
+          </p>
         </section>
       </section>
     </main>
 
-    <footer>Nenhum dado real é utilizado. Projeto exclusivamente educacional.</footer>
+    <footer>
+      Nenhum dado real é utilizado. Projeto exclusivamente educacional.
+    </footer>
+
     <script type="module" src="app.js"></script>
   </body>
 </html>

@@ -79,5 +79,221 @@
     "acao": "CONSULTAR_RECIBO",
     "recurso": "1001",
     "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-2E94E6",
+    "data": "2026-09-17T09:08:02.407Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-F7BD98",
+    "data": "2026-09-17T09:15:03.396Z",
+    "usuario": "servidor.demo",
+    "perfil": "servidor",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-49654A",
+    "data": "2026-09-17T09:15:19.534Z",
+    "usuario": "servidor.demo",
+    "perfil": "servidor",
+    "acao": "ACESSO_NEGADO",
+    "recurso": "/api/provas-vida",
+    "resultado": "PERFIL_SEM_PERMISSAO"
+  },
+  {
+    "requestId": "REQ-AF6147",
+    "data": "2026-09-17T09:15:23.129Z",
+    "usuario": "servidor.demo",
+    "perfil": "servidor",
+    "acao": "ACESSO_NEGADO",
+    "recurso": "/api/provas-vida",
+    "resultado": "PERFIL_SEM_PERMISSAO"
+  },
+  {
+    "requestId": "REQ-28E7A6",
+    "data": "2026-09-17T09:15:24.089Z",
+    "usuario": "servidor.demo",
+    "perfil": "servidor",
+    "acao": "ACESSO_NEGADO",
+    "recurso": "/api/provas-vida",
+    "resultado": "PERFIL_SEM_PERMISSAO"
+  },
+  {
+    "requestId": "REQ-E4A5FD",
+    "data": "2026-09-17T09:15:37.852Z",
+    "usuario": "auditor.demo",
+    "perfil": "auditor",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-A2BDA6",
+    "data": "2026-09-17T09:15:54.452Z",
+    "usuario": "auditor.demo",
+    "perfil": "auditor",
+    "acao": "ACESSO_NEGADO",
+    "recurso": "/api/provas-vida",
+    "resultado": "PERFIL_SEM_PERMISSAO"
+  },
+  {
+    "requestId": "REQ-A4FA5D",
+    "data": "2026-09-17T09:15:57.499Z",
+    "usuario": "auditor.demo",
+    "perfil": "auditor",
+    "acao": "ACESSO_NEGADO",
+    "recurso": "/api/provas-vida",
+    "resultado": "PERFIL_SEM_PERMISSAO"
+  },
+  {
+    "requestId": "REQ-2472E3",
+    "data": "2026-09-17T09:16:52.936Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-F7DF8A",
+    "data": "2026-09-17T09:17:07.221Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CRIAR_PROVA_VIDA",
+    "recurso": "nova",
+    "resultado": "ERRO_403"
+  },
+  {
+    "requestId": "REQ-ADA0F7",
+    "data": "2026-09-17T09:17:26.545Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CRIAR_PROVA_VIDA",
+    "recurso": "1005",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-58F9A3",
+    "data": "2026-09-17T10:17:33.400Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CONSULTAR_PROVA_VIDA",
+    "recurso": "1001",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-99DD97",
+    "data": "2026-09-17T18:44:55.823Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-0503C7",
+    "data": "2026-09-17T18:45:10.724Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CRIAR_PROVA_VIDA",
+    "recurso": "1006",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-71E697",
+    "data": "2026-09-17T18:45:38.804Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-7AC244",
+    "data": "2026-09-18T08:58:37.833Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "LOGIN_SUCESSO",
+    "recurso": "autenticacao",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-C79852",
+    "data": "2026-09-18T08:58:50.247Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CONSULTAR_PROVA_VIDA",
+    "recurso": "1001",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-D42CE3",
+    "data": "2026-09-18T08:58:58.937Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CONSULTAR_PROVA_VIDA",
+    "recurso": "1001",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-F0751B",
+    "data": "2026-09-18T08:59:26.589Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CONSULTAR_PROVA_VIDA",
+    "recurso": "1009",
+    "resultado": "ERRO_404"
+  },
+  {
+    "requestId": "REQ-984789",
+    "data": "2026-09-18T08:59:38.827Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CONSULTAR_PROVA_VIDA",
+    "recurso": "1003",
+    "resultado": "ERRO_403"
+  },
+  {
+    "requestId": "REQ-011521",
+    "data": "2026-09-18T08:59:57.956Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "CRIAR_PROVA_VIDA",
+    "recurso": "1007",
+    "resultado": "SUCESSO"
+  },
+  {
+    "requestId": "REQ-94CF21",
+    "data": "2026-09-18T09:00:01.020Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "VALIDAR_PROVA_VIDA",
+    "recurso": "1007",
+    "resultado": "VALIDADA"
+  },
+  {
+    "requestId": "REQ-CBA35F",
+    "data": "2026-09-18T09:00:02.293Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "VALIDAR_PROVA_VIDA",
+    "recurso": "1007",
+    "resultado": "ERRO_409"
+  },
+  {
+    "requestId": "REQ-22CAD6",
+    "data": "2026-09-18T09:00:03.305Z",
+    "usuario": "cidadao.demo",
+    "perfil": "cidadao",
+    "acao": "VALIDAR_PROVA_VIDA",
+    "recurso": "1007",
+    "resultado": "ERRO_409"
   }
 ]

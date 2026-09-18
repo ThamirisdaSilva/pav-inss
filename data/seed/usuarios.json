@@ -4,7 +4,7 @@
     "usuario": "cidadao.demo",
     "senha": "123456",
     "perfil": "cidadao",
-    "cpf": "12345678900",
+    "nuit": "123456789",
     "token": "TOKEN_CIDADAO"
   },
   {
@@ -12,7 +12,7 @@
     "usuario": "servidor.demo",
     "senha": "123456",
     "perfil": "servidor",
-    "cpf": null,
+    "nuit": null,
     "token": "TOKEN_SERVIDOR"
   },
   {
@@ -20,7 +20,7 @@
     "usuario": "auditor.demo",
     "senha": "123456",
     "perfil": "auditor",
-    "cpf": null,
+    "nuit": null,
     "token": "TOKEN_AUDITOR"
   },
   {
@@ -28,7 +28,7 @@
     "usuario": "visitante.demo",
     "senha": "123456",
     "perfil": "visitante",
-    "cpf": null,
+    "nuit": null,
     "token": "TOKEN_VISITANTE"
   }
 ]

@@ -2,7 +2,7 @@
   {
     "id": 1001,
     "protocolo": "PV-2026-001001",
-    "cpf": "12345678900",
+    "nuit": "123456789",
     "numeroBeneficio": "987654321",
     "proprietario": "cidadao.demo",
     "status": "VALIDADA",
@@ -12,7 +12,7 @@
   {
     "id": 1002,
     "protocolo": "PV-2026-001002",
-    "cpf": "12345678900",
+    "nuit": "123456789",
     "numeroBeneficio": "987654322",
     "proprietario": "cidadao.demo",
     "status": "AGUARDANDO_VALIDACAO",
@@ -22,7 +22,7 @@
   {
     "id": 1003,
     "protocolo": "PV-2026-001003",
-    "cpf": "98765432100",
+    "nuit": "987654321",
     "numeroBeneficio": "123456789",
     "proprietario": "outro.cidadao",
     "status": "REPROVADA",
@@ -32,11 +32,41 @@
   {
     "id": 1004,
     "protocolo": "PV-2026-001004",
-    "cpf": "12345678900",
+    "nuit": "123456789",
     "numeroBeneficio": "987654321",
     "proprietario": "cidadao.demo",
     "status": "VALIDADA",
     "dataCriacao": "2026-09-15T09:26:15.082Z",
     "dataConclusao": "2026-09-15T09:26:19.330Z"
+  },
+  {
+    "id": 1005,
+    "protocolo": "PV-2026-001005",
+    "nuit": "123456789",
+    "numeroBeneficio": "98787679679",
+    "proprietario": "cidadao.demo",
+    "status": "AGUARDANDO_VALIDACAO",
+    "dataCriacao": "2026-09-17T09:17:26.542Z",
+    "dataConclusao": null
+  },
+  {
+    "id": 1006,
+    "protocolo": "PV-2026-001006",
+    "nuit": "123456789",
+    "numeroBeneficio": "98765122",
+    "proprietario": "cidadao.demo",
+    "status": "AGUARDANDO_VALIDACAO",
+    "dataCriacao": "2026-09-17T18:45:10.705Z",
+    "dataConclusao": null
+  },
+  {
+    "id": 1007,
+    "protocolo": "PV-2026-001007",
+    "nuit": "123456789",
+    "numeroBeneficio": "87976976875",
+    "proprietario": "cidadao.demo",
+    "status": "VALIDADA",
+    "dataCriacao": "2026-09-18T08:59:57.955Z",
+    "dataConclusao": "2026-09-18T09:00:01.018Z"
   }
 ]

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Consultar solicitação</title>
+
+    <link rel="stylesheet" href="consulta.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div>
+        <strong>PROVA DE VIDA DIGITAL</strong>
+        <span>Consulta de solicitação</span>
+      </div>
+
+      <a href="/"> Voltar para o início </a>
+    </header>
+
+    <main class="container">
+      <!-- CONSULTA -->
+
+      <section class="card">
+        <p class="label">CONSULTA</p>
+
+        <h1>Consultar solicitação</h1>
+
+        <p>
+          Informe o número da solicitação para consultar os dados da prova de
+          vida.
+        </p>
+
+        <label for="idSolicitacao"> Número da solicitação </label>
+
+        <input id="idSolicitacao" type="number" placeholder="Ex.: 1001" />
+
+        <div class="actions">
+          <button id="consultarButton" class="primary" type="button">
+            Consultar
+          </button>
+
+          <button id="limparButton" class="secondary" type="button">
+            Limpar
+          </button>
+        </div>
+      </section>
+
+      <!-- MENSAGEM -->
+
+      <p id="mensagem" class="mensagem"></p>
+
+      <!-- RESULTADO -->
+
+      <section id="resultado" class="card">
+        <p class="label">RESULTADO</p>
+
+        <h2>Dados da solicitação</h2>
+
+        <div class="dados">
+          <div>
+            <span>ID</span>
+
+            <strong id="idResultado"> - </strong>
+          </div>
+
+          <div>
+            <span>Protocolo</span>
+
+            <strong id="protocolo"> - </strong>
+          </div>
+
+          <div>
+            <span>NUIT</span>
+
+            <strong id="nuit"> - </strong>
+          </div>
+
+          <div>
+            <span>Número do benefício</span>
+
+            <strong id="beneficio"> - </strong>
+          </div>
+
+          <div>
+            <span>Status</span>
+
+            <strong id="status" class="status"> - </strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- AJUDA -->
+
+      <section class="card ajuda">
+        <h2>Dados para teste</h2>
+
+        <p>Você pode consultar:</p>
+
+        <ul>
+          <li><strong>1001</strong> — prova validada</li>
+
+          <li><strong>1002</strong> — aguardando validação</li>
+
+          <li><strong>1003</strong> — pertence a outro cidadão</li>
+
+          <li><strong>9999</strong> — solicitação inexistente</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>Projeto exclusivamente educacional.</footer>
+
+    <script src="consulta.js"></script>
+  </body>
+</html>

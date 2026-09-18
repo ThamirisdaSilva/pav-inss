@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cadastro de solicitação</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Cadastro de solicitação</h1>
+        <p>Sistema de Prova de Vida Digital</p>
+      </div>
+
+      <a href="/"> Voltar para o início </a>
+    </header>
+
+    <main class="container">
+
+      <section class="panel">
+        <h2>Nova solicitação</h2>
+
+        <p>
+          Preencha os dados abaixo para iniciar uma solicitação de prova de
+          vida.
+        </p>
+      </section>
+
+      <!-- FORMULÁRIO -->
+
+      <section class="panel">
+        <h2>Dados da solicitação</h2>
+
+        <form id="solicitacaoForm">
+          <label for="nuit"> NUIT </label>
+
+          <input
+            id="nuit"
+            name="nuit"
+            inputmode="numeric"
+            maxlength="9"
+            pattern="[0-9]{9}"
+            placeholder="123456789"
+            required
+          />
+
+          <label for="numeroBeneficio"> Número do benefício </label>
+
+          <input
+            id="numeroBeneficio"
+            name="numeroBeneficio"
+            inputmode="numeric"
+            pattern="[0-9]+"
+            placeholder="987654321"
+            required
+          />
+
+          <label for="tipoSolicitacao"> Tipo de solicitação </label>
+
+          <select id="tipoSolicitacao" name="tipoSolicitacao" required>
+            <option value="">Selecione uma opção</option>
+
+            <option value="prova-vida">Prova de vida</option>
+
+            <option value="regularizacao">Regularização</option>
+
+            <option value="atualizacao">Atualização cadastral</option>
+          </select>
+
+          <label>
+            <input type="checkbox" id="confirmacao" required />
+
+            Confirmo que os dados informados estão corretos.
+          </label>
+
+          <button class="primary" type="submit">Cadastrar solicitação</button>
+        </form>
+      </section>
+
+      <!-- ORIENTAÇÕES -->
+
+      <section class="panel">
+        <h2>Antes de continuar</h2>
+
+        <ul>
+          <li>Confira o NUIT informado.</li>
+
+          <li>Confira o número do benefício.</li>
+
+          <li>Selecione o tipo de solicitação.</li>
+
+          <li>Confirme os dados antes de enviar.</li>
+        </ul>
+      </section>
+
+      <!-- RESULTADO -->
+
+      <section class="panel">
+        <h2>Resultado da solicitação</h2>
+
+        <p id="mensagem">Nenhuma solicitação foi cadastrada.</p>
+      </section>
+    </main>
+    <script src="cadastro.js"></script>
+  </body>
+</html>

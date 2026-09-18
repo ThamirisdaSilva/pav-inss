@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f5f8;
+  color: #222;
+}
+
+/* CABEÇALHO */
+
+.topbar {
+  background: #111f96;
+  color: white;
+  padding: 18px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.topbar span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CONTEÚDO */
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* CARTÕES */
+
+.card {
+  background: white;
+
+  padding: 28px;
+
+  margin-bottom: 24px;
+
+  border: 1px solid #dddddd;
+
+  border-radius: 10px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #111f96;
+}
+
+/* CAMPOS */
+
+label {
+  display: block;
+
+  margin-top: 20px;
+  margin-bottom: 8px;
+
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+
+  padding: 12px;
+
+  font-size: 16px;
+
+  border: 1px solid #bbbbbb;
+
+  border-radius: 6px;
+}
+
+/* BOTÕES */
+
+.actions {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 18px;
+
+  border-radius: 6px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.primary {
+  background: #111f96;
+  color: white;
+}
+
+.secondary {
+  background: #e6e6e6;
+  color: #222;
+}
+
+/* RESULTADO */
+
+.dados {
+  display: grid;
+  gap: 16px;
+}
+
+.dados div {
+  border-bottom: 1px solid #eeeeee;
+
+  padding-bottom: 12px;
+}
+
+.dados span {
+  display: block;
+
+  font-size: 13px;
+
+  color: #666;
+
+  margin-bottom: 5px;
+}
+
+/* STATUS */
+
+.status {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 5px;
+
+  background: #eeeeee;
+}
+
+.status-validada {
+  background: #dff4e5;
+  color: #196a32;
+}
+
+.status-reprovada {
+  background: #f8dddd;
+  color: #9b2222;
+}
+
+.status-aguardando {
+  background: #fff1c7;
+  color: #805b00;
+}
+
+/* MENSAGEM */
+
+.mensagem {
+  min-height: 24px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+/* AJUDA */
+
+.ajuda ul {
+  line-height: 1.8;
+}
+
+/* RODAPÉ */
+
+footer {
+  text-align: center;
+
+  padding: 30px;
+
+  color: #666;
+
+  font-size: 13px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}

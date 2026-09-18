@@ -2,7 +2,7 @@
   {
     "id": 1001,
     "protocolo": "PV-2026-001001",
-    "cpf": "12345678900",
+    "nuit": "123456789",
     "numeroBeneficio": "987654321",
     "proprietario": "cidadao.demo",
     "status": "VALIDADA",
@@ -12,7 +12,7 @@
   {
     "id": 1002,
     "protocolo": "PV-2026-001002",
-    "cpf": "12345678900",
+    "nuit": "123456789",
     "numeroBeneficio": "987654322",
     "proprietario": "cidadao.demo",
     "status": "AGUARDANDO_VALIDACAO",
@@ -22,7 +22,7 @@
   {
     "id": 1003,
     "protocolo": "PV-2026-001003",
-    "cpf": "98765432100",
+    "nuit": "987654321",
     "numeroBeneficio": "123456789",
     "proprietario": "outro.cidadao",
     "status": "REPROVADA",
